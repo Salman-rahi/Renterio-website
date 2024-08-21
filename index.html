@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font CDN--Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- -------------------------------------------------------------------->
+    <!-- Tailwind & daisyUi CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ------------------------------------------------------------ -->
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/8a3434780b.js" crossorigin="anonymous"></script>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="style/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ABEF5F',
+                    },
+                    fontFamily: {
+                        manrope: "Manrope",
+                    }
+                },
+            },
+        }
+    </script>
+
+</head>
+
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- Navbar section -->
+        <nav class="my-6">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start flex items-center gap-2">
+                    
+                    <span class="bg-primary rounded-full px-2 py-0.5"><i
+                            class="fa-solid fa-arrow-right text-sm -rotate-45 "></i></span>
+                    <div class="mr-4"><a class="text-xl ">Rintrio</a></div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 md:disabled:">
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Service</a></li>
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>blogs</a></li>
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="px-4 flex items-center gap-2">
+                        <i class="fa-solid fa-magnifying-glass bg-[#E9E9E9] rounded-full px-1 py-0.5 text-gray-400 text-xs"></i>
+                        <i class="fa-solid fa-cart-shopping bg-[#E9E9E9] rounded-full px-1 py-0.5 text-gray-400 text-xs"></i>
+                    </div>
+                    <button class=" btn bg-primary rounded-3xl h-9 min-h-9 hidden sm:block">
+                        
+                        Book Consult
+                        <span class="bg-black text-white  rounded-full px-1 py-0.5"><i
+                            class="fa-solid fa-arrow-right text-sm -rotate-45 "></i>
+                        </span>
+                    </button>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-4">
+                            <li class="hover:text-primary  transition-colors duration-300 ease-in-out"><a>Service</a></li>
+                            <li class="hover:text-primary  transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+                            <li class="hover:text-primary  transition-colors duration-300 ease-in-out"><a>blogs</a></li>
+                            <li class="hover:text-primary  transition-colors duration-300 ease-in-out"><a>Contact Us</a>
+                            </li>
+                            <li class="hover:text-primary  transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner section -->
+         <div class="space-y-2 sm:space-y-4">
+            <div class="w-10/12 sm:w-[570px]  sm:mx-auto  mx-auto">
+                <img src="assets/banner.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-2xl md:text-3xl lg:text-5xl text-center font-bold px-5 sm:px-28">
+                    A barn house of this design has a  striking appearance
+                </h1>
+                <p class="text-center text-[#494949] py-4 px-5 sm:px-28 text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <div class="text-center px-5 flex items-center justify-center">
+                <button class="bg-[#ABEF5F80] btn rounded-3xl h-11 min-h-11 w-full sm:w-3/12">View Details
+                <span class=" rounded-full px-2 py-0.5 bg-[#ABEF5F]"><i
+                    class="fa-solid fa-arrow-right text-sm -rotate-45 "></i></span>
+                </button>
+            </div>
+            <div></div>
+         </div>
+    </header>
+</body>
+
+</html>
